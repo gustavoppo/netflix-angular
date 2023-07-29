@@ -2504,24 +2504,29 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   color: #ef4444;
 }
 .p-button.p-button-link {
-  color: #5438dc;
+  text-decoration: none;
+  color: #ffffff96;
   background: transparent;
   border: transparent;
 }
 .p-button.p-button-link:enabled:hover {
+  text-decoration: none;
   background: transparent;
   color: #5438dc;
   border-color: transparent;
 }
 .p-button.p-button-link:enabled:hover .p-button-label {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #a291fead;
 }
 .p-button.p-button-link:enabled:focus {
+  text-decoration: none;
   background: transparent;
   box-shadow: 0 0 0 1px #846cf9;
   border-color: transparent;
 }
 .p-button.p-button-link:enabled:active {
+  text-decoration: none;
   background: transparent;
   color: #5438dc;
   border-color: transparent;
@@ -4808,10 +4813,27 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   border-bottom-left-radius: 6px;
 }
 .p-toolbar {
-  background: #282936;
-  border: 1px solid #3e4053;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+  /* background: #282936;
+  border: 1px solid #3e4053; */
   padding: 1.25rem;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   gap: 0.5rem;
 }
 .p-toolbar .p-toolbar-separator {
